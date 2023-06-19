@@ -42,3 +42,52 @@ W tym przypadku to będzie $-1$.
     b. [ ] niemal jednostajnie zbieżny
 
     c. [ ] zbieżny punktowo do funkcji ciągłej
+
+### Zadanie: Szereg $\sum_{n \ge 1}10^{-n!}$
+
+    a. [TAK] jest zbieżny
+    b. [TAK] ma sumę mniejszą od 1/9
+    c. [NIE] ma sumę wymierną
+
+### Komentarz:
+
+a i b:
+Wzór na szereg geometryczny $\sum_{k \ge 0}x^k = \frac{1}{1-x}$
+
+Wiemy, że $\sum_{n \ge 1}10^{-n!} \le \sum_{n \ge 1}10^{-n}$, więc z kryterium porównawczego zbieżność większego szeregu determinuje zbieżność szeregu w zadaniu.
+
+Ze wzoru na szereg geometryczny:
+$\sum_{n \ge 1}10^{-n} = \frac{1}{1-\frac{1}{10}} - 1 = \frac{9}{10}$
+
+c:
+Jeśli suma byłaby wymierna, to by miała okresowe rozwinięcie dziesiętne np. 0.(3), 0.1(0).
+
+### Zadanie: Funkcja $f: [0,1] \to R$ jest rosnąca. Wynika z tego, że:
+
+    a. [TAK] zbiór punktów ciągłości funkcji f jest nieprzeliczalny
+    b. [NIE] funkcja f jest ciągła poza pewnym zbiorem skończonym
+    c. [TAK] funkcja f jest różnowartościowa
+
+### Komentarz:
+c: Przyjmujemy, że rosnąca = ściśle rosnąca tzn. $y > x => f(y) > f(x)$.
+a i b: Funkcja Cantora nie działa(!)
+Jest ważne twierdzenie mówiące, że funkcja monotoniczna na R może mieć co najwyżej skończenie wiele punktów nieciągłości.
+https://en.wikipedia.org/wiki/Discontinuities_of_monotone_functions
+
+Skoro dziedzina jest nieprzeliczalna, a zbiór pinktów nieciągłości jest przeliczalny, to musi być nieprzeliczalnie wiele punktów ciągłości.
+
+### Zadanie: Ciąg wielomianów $P_n: R \to R, n=1,2,\dots$ jest zbieżny do funkcji $f: R \to R$ jednostajnie na każdym przedziale $[a, b] \subset R$. Wynika z tego, że funkcja $f$:
+
+    a. [NIE] jest wielomianem
+    b. [NIE] jest nieograniczona na R
+    c. [NIE] jest różniczkowalna w pewnym punkcie
+
+### Komentarz:
+Zbieżność jednostajna na każdym przedziale jest słabszym założeniem niż zbieżność jednostajna na R(!).
+
+Inaczej nazywa to się zbieżność niemal jednostajna.
+
+a: konktrprzykład $\sin x$
+c: kontprzykład funkcja weiestrassa (funcja ciągła wszędzie, ale nigdzie nie różniczkowalna)
+b: To co w a
+
