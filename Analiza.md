@@ -88,6 +88,46 @@ Zbieżność jednostajna na każdym przedziale jest słabszym założeniem niż 
 Inaczej nazywa to się zbieżność niemal jednostajna.
 
 a: konktrprzykład $\sin x$
-c: kontprzykład funkcja weiestrassa (funcja ciągła wszędzie, ale nigdzie nie różniczkowalna)
+
+c: kontprzykład funkcja weiestrassa (funcja ciągła wszędzie, ale nigdzie nie 
+różniczkowalna)
+
 b: To co w a
 
+### Zadanie: Nieskończony ciąg $(a_n)$ liczb rzeczywistych dodatnich jest monotoniczny i ograniczony. Wynika z tego, że
+
+    a. [NIE] ciąg sin(a_n) jest monotoniczny
+    b. [TAK] ciąg cos(a_n) jest zbieżny
+    c. [NIE] ciąg log(a_n) jest ograniczony
+
+### Komentarz:
+
+a: jaki sinus jest każdy widzi
+
+b: $|\cos a_n| \le a_n$ => jest zbieżny
+
+c: ciąg $\frac{1}{n}$
+
+### Zadanie: Funkcja $f: R \to R$ jest różniczkowalna i $f'(0) = 0$. Wynika z tego, że:
+
+    a. [NIE] f ma w punkcie x = 0 ekstremum lokalne
+    b. [TAK] jeśli f'(x) < 0 dla wszystkich x != 0, to f jest malejąca na R
+    c. [TAK] f jest ciągła w punkcie x = 2019
+
+### Komentarz:
+
+a: Może mieć punkt przegięcia (musi mieć???)
+
+c: Różniczkowalność implikuje ciągłość
+
+### Zadanie: Szereg $S(x) = \sum_{n \ge 2} a_nx^n$ jest zbieżny dla wszystkich $x \in (-1, 1)$ oraz rozbieżny dla -1. Wynika z tego, że:
+
+    a. [NIE] Szereg S(x) jest rozbieżny dla x = 1
+    b. [TAK] Szereg S(x) jest rozbieżny dla x = 2
+    c. [TAK] funkcja x -> S(x) jest różniczkowalna na przedziale (-1, 1) oraz S'(0) = 0
+
+### Komentarz:
+
+Słowo klucz promień zbieżności.
+
+c: Szereg potęgowy jest trywialnie różniczkowalny, zauważmy że po zróżniczkowaniu każdy wyraz będzie zawierał x, więc x=0 zeruje.
