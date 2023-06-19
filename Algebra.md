@@ -24,3 +24,26 @@ a: kontrprzykład funkcja stała równa 0
 b: $dim A$ to liczba niezależnych wektorów rozpinających przestrzeń. Jest ich co najmniej 10.
 c: Jeżeli układ f(x) jest niezależny, to $dim im f = dim X$, co jest równoważne, że f jest monomorfizmen aka różnowartościowa.
 
+### Zadanie: Grupą z działaniem mnożenia liczb zespolonych i elementem neutralnym 1 jest zbiór:
+
+    a. [TAK] {z \in C: z^2019 = 1}
+    b. [NIE] {z \in C: Re(z)Im(z) = 0}
+    c. [TAK] {z2^k, z \in C, k \in Z: |z| = 1}
+
+### Komentarz:
+
+Żeby to była grupa, to każdy element musi posiadać element odwrotny oraz zbiór musi być zamknięty na działanie.
+
+a: to pierwiastku jednostki, wyobraźmy sobie okrąg jednostkowy, dzielimy go na 2019 równo rozstawionych punktów. Ponieważ równo są rozstawione, to działanie mnożenia zawsze będzie równy temu wielokątowi.
+b: 0 nie posiada elementu odwrotnego
+c: Intuicja jest taka, że |z| = 1 powoduje, że z należy do okręgu jednostkowego wokół zera. Mnożenie przez potęgi dwójki to skalowanie wektora. 
+
+### Zadanie: $X$ jest przestrzenią liniową wymiaru 15 nad ciałem liczb rzeczywistych. Wynika z tego, że:
+
+    a. [TAK] dowolny układ 20 wektorów z przestrzeni X jest liniowow zależny
+    b. [NIE] dowolny układ 10 wektorów z przestrzeni X jest liniowow niezależny
+    c. [TAK] dowolna baza przestrzeni X składa się z 15 wektorów
+
+### komentarz:
+
+$dim(X) = 15$ <=> baza X składa się z 15 liniowo niezależnych wektorów

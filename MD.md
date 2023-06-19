@@ -35,3 +35,43 @@ a: Nie musi zawierać, wystarczy żeby zawierał podgraf homeomorficzny z jednym
 b: Kryterium Eulera mówi, że jeśli graf jest planarny, to $|E| \le 3|V| - 6$. Nie mówi to nam nic o przypadku, kiedy jest nieplanarny.
 
 c: Kontrprzykład: Graf Petersena o liczbie chromatycznej 3.
+
+### Zadanie: Ciąg określony zbiorem $a_n = |\{ (A, x): A \subset \{1, 2, \dots, n \}, x \in A \}|$, spełnia warunek:
+
+    a. [NIE] lim_{n \to \infty} a_{n+1} / a_n = \infty
+    b. [TAK] a_n jest parzyste dla n >= 2
+    c. [NIE] a_n = n * n! dla n >= 0
+
+### Komentarz:
+
+Łatwo zauważyć, że:
+
+$$a_n = \sum_{k=1}^n \binom{n}{k}k$$
+
+Ale $\binom{n}{k} = \frac{n}{k} \binom{n - 1}{k - 1}$
+
+Więc $a_n = n \sum_{k=1}^n \binom{n - 1}{k - 1} = n \sum_{k=0}^{n-1} \binom{n}{k}$
+
+Ale $sum_{k} \binom{n}{k} = 2^n$
+
+Więc otzymujemy $a_n = n2^{n-1}$
+
+
+### Zadanie: G jest grafem o $n \le 6$ wierzchołkach i m krawędziach. Wynika z tego:
+
+    a. [TAK] co najmniej jeden z grafów G i \hat{G}(dopełnienie grafu G) jest planarny
+    b. [NIE] jeśli m < 10, to G jest planarny
+    c. [NIE] jeśli m > 10, to G jest nieplanarny
+
+### Komentarz:
+
+Kryterium eulera:
+
+$G$ spójny planarny => $|E| \le 3|V| - 6$
+
+a: 
+Jeśli G nie jest spójny, to oczywiste.
+
+Jeśli G jest spójny, to może mieć maksymalnie $\binom{6}{2}=15$ krawędzi. Z kryterium Kuratowskiego graj nie jest planarny, jeśli zawiera podgraf homeomorficzny do $K_5$ albo $K_{3, 3}$. Mniej krawędzi wymaga ten drugi, załóżmy, że $G$ zawiera podgraf homeomorficzny do $K_{3, 3}$. Wtedy $\hat{G}$ nie może zawierać żadnego homeomorficznego z nich, bo nie starczy krawędzi.
+
+b: $K_{3, 3}
